@@ -1,10 +1,92 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
- <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <title>Якорь в другом документе</title>
- </head>
- <body>
-  <p><a href="text.html#bottom">Перейти к нижней части текста</a></p>
-  </body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tablucja</title>
+</head>
+<body>
+  <div>
+ <h1 align="center" >IFRAME</h1>
+ <iframe src="http://www.radioroks.ua/" width="600" height="600" align="center"> </iframe>
+ </div>
+
+  <h1 align="center" >TABLE</h1>
+<!--table-->
+<table border="1" width="300" height="200" align="center">
+<h2><caption> Title table</caption></h2>
+<thead>
+  <tr>
+    <th>nomer</th>
+    <th>name</th>
+    <th>firstname</th>
+  </tr>
+
+</thead>
+<tbody>
+
+  <tr>
+    <td>2.1</td>
+    <td>2.2</td>
+    <td>2.3</td>
+    <td>2.4</td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+    <td colspan="2">3.2 /3.3</td>
+    <td rowspan="2">3.4/4/4</td>
+    
+  </tr>
+  <tr>
+    <td>4.1</td>
+    <td>4.2</td>
+    <td>4.3</td>
+    
+  </tr>
+  <tfoot>
+    <tr>
+    <td>nomer</td>
+    <td>name</td>
+    <td>Firstname</td>
+  </tr></tfoot>
+  </tbody>
+
+  </table>  
+  <h1 align="center" >TABLE</h1>
+<!--table-->
+<table border="1" width="300" height="200" align="center">
+<h2><caption> TABLE 3 </caption></h2>
+<tbody> 
+  <tr>
+    <td>1.1</td>
+  </tr>
+  <tr> 
+    <td>2.1</td>
+    <td rowspan="2">2.2</td>
+  </tr>
+  <tr>
+    <td>3.1</td>
+  </tr>
+  </tbody>
+  </table>   
+<h2> FORM </h2>
+<fieldset>
+  <legend align="center">FORM</legend>
+  <form action="" name="registerform" method="GET">
+   <div>
+     <label for="focusSex" > Чоловіча стать</label>
+     <input type="radio" name="userSex" id="focusSexMan" value="man"> 
+     <label for="focusSex" > Жіноча стать</label>
+     <input type="radio" name="userSex" id="focusSexWoman" value="Woman">  
+</div>
+<div>
+     <label for="focusname" > Ведіть своє  name</label>
+     <input type="text" name="username" value=""id="focusname"> 
+</div>
+<div>
+     <label for="focusSelect" > Виберіть мову програьування</label>
+     <input type="radio" name="userLang" value=""id="focusSelect"> 
+</div>
+</form>  
+</fieldset>                                          
+</body>
 </html>
